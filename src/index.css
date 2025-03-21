@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+    background-image: url('./assets/image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+/* ------------ wavy images -------------  */
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wavy {
+    display: inline-block;
+    animation: wave 1s infinite;
+}
+
+/* ----------- wavy text ------------- */
+
+.wave-container {
+    display: inline-block;
+  }
+  
+  .wave-text span {
+    display: inline-block;
+    animation: text-wave 1s infinite;
+  }
+  
+  .wave-text span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .wave-text span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .wave-text span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .wave-text span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes text-wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
+
+  /* -------------------------- glow effect start ---------------  */
+.glow-effect{
+    position: relative;
+    letter-spacing: 2px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+   
+  
+  }
+  
+  @keyframes animate
+  {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,91.2%
+    {
+      color: #0e3742;
+      text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65.80%,80.1%,90%,92.1%
+    {
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4,
+    }
+  }
+  /* -------------------------- glow effect end ---------------  */
