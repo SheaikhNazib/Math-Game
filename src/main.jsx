@@ -11,6 +11,7 @@ import MathGame from './components/MathGame.jsx';
 import ImageGame from './components/ImageGame.jsx';
 import RunningGame from './components/RunningGame.jsx';
 import SumBox from './SumBox.jsx';
+import FlagGames from './components/FlagGames.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/sumBox",
     element: <SumBox></SumBox>
+  },
+  {
+    path: "/flagGames",
+    element: <FlagGames></FlagGames>
   },
   // {
   //   path: "/runningGame",
