@@ -12,6 +12,7 @@ import ImageGame from './components/ImageGame.jsx';
 import RunningGame from './components/RunningGame.jsx';
 import SumBox from './SumBox.jsx';
 import FlagGames from './components/FlagGames.jsx';
+import WordScramble from './components/Word Scramble/WordScramble.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/flagGames",
     element: <FlagGames></FlagGames>
+  },
+  {
+    path: "/wordScramble",
+    element: <WordScramble></WordScramble>
   },
   // {
   //   path: "/runningGame",
