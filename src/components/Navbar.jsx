@@ -16,6 +16,7 @@ const Navbar = () => {
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/'>Image Game</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/mathGame'>Math Game</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/sumBox'>Sum Box</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/fractionFactory'>Fraction Factory</Link></li>
                     </ul>
                 </div>
 

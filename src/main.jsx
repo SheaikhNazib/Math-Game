@@ -17,6 +17,7 @@ import ScienceFlashcard from './components/ScienceFlashcard/ScienceFlashcard.jsx
 import VocabularyVolcano from './components/VocabularyVolcano/VocabularyVolcano.jsx';
 import ElementMatcher from './components/ElementMatcher/ElementMatcher.jsx';
 import GrammarNinja from './components/GrammarNinja/GrammarNinja.jsx';
+import FractionFactory from './components/FractionFactory/FractionFactory.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/grammarNinja",
     element: <GrammarNinja></GrammarNinja>
+  },
+  {
+    path: "/fractionFactory",
+    element: <FractionFactory></FractionFactory>
   }
 ]);
 
