@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import flagsData from "../Flags/flags.json";
+import flagsData from "../Json/flags.json";
 import Navbar from "./Navbar";
 
 const FlagGames = () => {
@@ -122,14 +122,15 @@ const FlagGames = () => {
     <>
       <Navbar></Navbar>
       <div className="flex flex-col items-center p-6 bg-gradient-to-b from-blue-500 to-purple-600 min-h-screen text-white transition-all">
-        {gameStatus === "notStarted" && (
-          <button
-            className="btn btn-primary text-xl font-bold p-4 rounded-lg animate-bounce"
-            onClick={startGame}
-          >
-            Start Game
-          </button>
-        )}
+          {gameStatus === "notStarted" && (
+            <button
+              className="btn btn-primary text-3xl font-bold rounded-lg animate-bounce my-auto p-7"
+              onClick={startGame}
+            >
+              Start Game
+            </button>
+          )}
+
 
         {gameStatus === "playing" && (
           <>

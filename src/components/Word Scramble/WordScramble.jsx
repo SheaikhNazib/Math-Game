@@ -79,7 +79,7 @@ export default function WordGame() {
   return (
     <>
       <Navbar />
-      <div className="relative flex flex-col items-center gap-4 p-6">
+      <div className="relative flex flex-col items-center gap-4 p-6 min-h-screen">
         {paused && (
           <div className="absolute inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
             <button
@@ -109,13 +109,13 @@ export default function WordGame() {
           </div>
         ) : (
           <>
-            <div className="p-4 text-center w-80 bg-yellow-200 rounded-lg shadow-lg border-4 border-yellow-400">
+            <div className="p-4 text-center bg-yellow-200 rounded-lg shadow-lg border-4 border-yellow-400">
               <h2 className="text-lg font-bold mb-3">Arrange the word:</h2>
               <div className="flex justify-center gap-2">
                 {shuffledWord.map((letter, index) => (
                   <motion.button
                     key={index}
-                    className="text-white px-4 py-2 rounded-lg text-xl shadow-md hover:scale-110 bg-blue-500"
+                    className="text-white px-4 py-2 font-bold rounded-lg text-4xl shadow-md hover:scale-110 bg-blue-500"
                     whileTap={{ scale: 0.9, rotate: 10 }}
                     onClick={() => selectLetter(letter, index)}
                   >

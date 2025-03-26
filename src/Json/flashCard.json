@@ -1,0 +1,173 @@
+{
+    "flashcards": [
+        {
+            "question": "What is the chemical symbol for water?",
+            "answer": "H₂O",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Water_molecule.svg/120px-Water_molecule.svg.png",
+            "options": [
+                "H₂O",
+                "O₂",
+                "CO₂",
+                "NaCl"
+            ],
+            "theme": "blue",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"
+        },
+        {
+            "question": "What planet is known as the Red Planet?",
+            "answer": "Mars",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
+            "options": [
+                "Earth",
+                "Venus",
+                "Mars",
+                "Jupiter"
+            ],
+            "theme": "red",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/0945/0945-preview.mp3"
+        },
+        {
+            "question": "How many colors are in a rainbow?",
+            "answer": "7",
+            "image": "https://cdn-icons-png.flaticon.com/512/6644/6644381.png",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "theme": "rainbow",
+            "sound": "https://assets.mixkit.co/music/preview/mixkit-happy-children-138.mp3"
+        },
+        {
+            "question": "What do bees collect from flowers?",
+            "answer": "Nectar",
+            "image": "https://cdn-icons-png.flaticon.com/512/2734/2734991.png",
+            "options": [
+                "Honey",
+                "Pollen",
+                "Nectar",
+                "Water"
+            ],
+            "theme": "yellow",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/1109/1109-preview.mp3"
+        },
+        {
+            "question": "How many legs does a spider have?",
+            "answer": "8",
+            "image": "https://cdn-icons-png.flaticon.com/512/2976/2976392.png",
+            "options": [
+                "6",
+                "8",
+                "10",
+                "12"
+            ],
+            "theme": "black",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2612/2612-preview.mp3"
+        },
+        {
+            "question": "What animal says 'Moo'?",
+            "answer": "Cow",
+            "image": "https://cdn-icons-png.flaticon.com/512/1949/1949156.png",
+            "options": [
+                "Pig",
+                "Sheep",
+                "Horse",
+                "Cow"
+            ],
+            "theme": "brown",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2357/2357-preview.mp3"
+        },
+        {
+            "question": "What grows from a seed?",
+            "answer": "Plant",
+            "image": "https://cdn-icons-png.flaticon.com/512/5261/5261289.png",
+            "options": [
+                "Rock",
+                "Plant",
+                "Cloud",
+                "Mountain"
+            ],
+            "theme": "green",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2505/2505-preview.mp3"
+        },
+        {
+            "question": "What do caterpillars turn into?",
+            "answer": "Butterflies",
+            "image": "https://cdn-icons-png.flaticon.com/512/3043/3043837.png",
+            "options": [
+                "Birds",
+                "Butterflies",
+                "Bees",
+                "Frogs"
+            ],
+            "theme": "purple",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2596/2596-preview.mp3"
+        },
+        {
+            "question": "What do you use to write on paper?",
+            "answer": "Pencil",
+            "image": "https://cdn-icons-png.flaticon.com/512/3245/3245987.png",
+            "options": [
+                "Spoon",
+                "Pencil",
+                "Banana",
+                "Water"
+            ],
+            "theme": "gray",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2367/2367-preview.mp3"
+        },
+        {
+            "question": "What do you call a baby dog?",
+            "answer": "Puppy",
+            "image": "https://cdn-icons-png.flaticon.com/512/616/616430.png",
+            "options": [
+                "Kitten",
+                "Calf",
+                "Puppy",
+                "Chick"
+            ],
+            "theme": "orange",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2705/2705-preview.mp3"
+        },
+        {
+            "question": "What falls from the sky when it rains?",
+            "answer": "Water drops",
+            "image": "https://cdn-icons-png.flaticon.com/512/2410/2410895.png",
+            "options": [
+                "Leaves",
+                "Feathers",
+                "Water drops",
+                "Stones"
+            ],
+            "theme": "blue",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/0954/0954-preview.mp3"
+        },
+        {
+            "question": "What do you use to see far away things?",
+            "answer": "Telescope",
+            "image": "https://cdn-icons-png.flaticon.com/512/1824/1824767.png",
+            "options": [
+                "Microscope",
+                "Telescope",
+                "Magnifying glass",
+                "Camera"
+            ],
+            "theme": "darkblue",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/2755/2755-preview.mp3"
+        },
+        {
+            "question": "What shines in the sky at night?",
+            "answer": "Moon",
+            "image": "https://cdn-icons-png.flaticon.com/512/183/183615.png",
+            "options": [
+                "Sun",
+                "Cloud",
+                "Moon",
+                "Star"
+            ],
+            "theme": "navy",
+            "sound": "https://assets.mixkit.co/active_storage/sfx/0943/0943-preview.mp3"
+        }
+    ]
+}

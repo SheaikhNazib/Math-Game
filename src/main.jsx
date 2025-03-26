@@ -13,6 +13,7 @@ import RunningGame from './components/RunningGame.jsx';
 import SumBox from './SumBox.jsx';
 import FlagGames from './components/FlagGames.jsx';
 import WordScramble from './components/Word Scramble/WordScramble.jsx';
+import ScienceFlashcard from './components/ScienceFlashcard/ScienceFlashcard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/wordScramble",
     element: <WordScramble></WordScramble>
+  },
+  {
+    path: "/scienceFlashcard",
+    element: <ScienceFlashcard></ScienceFlashcard>
   },
   // {
   //   path: "/runningGame",

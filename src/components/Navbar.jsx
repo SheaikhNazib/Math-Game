@@ -8,11 +8,39 @@ const Navbar = () => {
     const links = (
         <>
             <div className='flex gap-14'>
-                <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/'>Image Game</Link>
-                <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/mathGame'>Math Game</Link>
-                <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/sumBox'>Sum Box</Link>
-                <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/flagGames'>Guess Flag</Link>
-                <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/wordScramble'>Word Scramble</Link>
+
+                <div className="dropdown dropdown-start">
+                    <div tabIndex={0} role="button" className="btn m-1">Math🔽</div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/'>Image Game</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/mathGame'>Math Game</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/sumBox'>Sum Box</Link></li>
+                    </ul>
+                </div>
+
+                <div className="dropdown dropdown-start">
+                    <div tabIndex={0} role="button" className="btn m-1">English 🔽</div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/flagGames'>Guess Flag</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/wordScramble'>Word Scramble</Link></li>
+                    </ul>
+                </div>
+
+
+                <div className="dropdown dropdown-start">
+                    <div tabIndex={0} role="button" className="btn m-1">General Knowledge 🔽</div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/scienceFlashcard'>Flash Card</Link></li>
+
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+                
+
                 {/* <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/runningGame'>Running Game</Link> */}
             </div>
         </>
