@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import flagsData from "../Json/flags.json";
-import Navbar from "./Navbar";
+import flagsData from "../../Json/flags.json";
+import Navbar from "../Navbar.jsx";
 
 const FlagGames = () => {
   const [currentFlag, setCurrentFlag] = useState(null);

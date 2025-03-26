@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar.jsx";
 import Lottie from "lottie-react";
-import emoji from "../assets/gif/emoji.json";
+import emoji from "../../assets/gif/emoji.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad, faStar, faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import clock from "../assets/gif/clock.json";
-import music1 from "../assets/music/music1.mp3"; // Import audio file properly
+import clock from "../../assets/gif/clock.json";
+import music1 from "../../assets/music/music1.mp3"; // Import audio file properly
 
 const MathGame = () => {
     const [num1, setNum1] = useState(0);

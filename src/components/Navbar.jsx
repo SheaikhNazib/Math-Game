@@ -25,6 +25,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/wordScramble'>Word Scramble</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/vocabularyVolcano'>Vocabulary Volcano</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/grammarNinja'>Grammar Ninja</Link></li>
                     </ul>
                 </div>
 

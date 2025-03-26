@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import apple from '../assets/image/apple.png';
-import ball from '../assets/image/ball.png';
-import cat from '../assets/image/cat.png';
-import rat from '../assets/image/rat.png';
+import Navbar from "../Navbar.jsx";
+import apple from '../../assets/image/apple.png';
+import ball from '../../assets/image/ball.png';
+import cat from '../../assets/image/cat.png';
+import rat from '../../assets/image/rat.png';
 import Lottie from "lottie-react";
-import study from "../assets/gif/study.json";
+import study from "../../assets/gif/study.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
-import clock from "../assets/gif/clock.json";
+import clock from "../../assets/gif/clock.json";
 // import background from "../assets/image/background.png"
 // import '../styles.css'; // Import the CSS file
 

@@ -1,8 +1,8 @@
 
 import './App.css'
 import Navbar from './components/Navbar'
-import MathGame from './components/MathGame'
-import ImageGame from './components/ImageGame'
+import MathGame from './components/MathGame/MathGame.jsx'
+import ImageGame from './components/ImageGame/ImageGame.jsx'
 
 function App() {
 

@@ -7,15 +7,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import MathGame from './components/MathGame.jsx';
-import ImageGame from './components/ImageGame.jsx';
+import MathGame from './components/MathGame/MathGame.jsx';
+import ImageGame from './components/ImageGame/ImageGame.jsx';
 import RunningGame from './components/RunningGame.jsx';
 import SumBox from './SumBox.jsx';
-import FlagGames from './components/FlagGames.jsx';
+import FlagGames from './components/FlagGames/FlagGames.jsx';
 import WordScramble from './components/Word Scramble/WordScramble.jsx';
 import ScienceFlashcard from './components/ScienceFlashcard/ScienceFlashcard.jsx';
 import VocabularyVolcano from './components/VocabularyVolcano/VocabularyVolcano.jsx';
 import ElementMatcher from './components/ElementMatcher/ElementMatcher.jsx';
+import GrammarNinja from './components/GrammarNinja/GrammarNinja.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: "/elementMatcher",
     element: <ElementMatcher></ElementMatcher>
+  },
+  {
+    path: "/grammarNinja",
+    element: <GrammarNinja></GrammarNinja>
   }
 ]);
 
