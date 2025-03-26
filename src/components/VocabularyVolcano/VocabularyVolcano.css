@@ -1,0 +1,349 @@
+/* Main Game Container */
+.vocabulary-volcano-game {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Start Screen */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.start-screen h1 {
+  font-size: 3rem;
+  color: #FF5722;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.start-screen p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.start-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Game Header */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #FF5722;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF5722;
+}
+
+/* Game Content Layout */
+.game-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Volcano Container and Canvas */
+.volcano-container {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volcano-canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Game Play Area */
+.game-play-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Word Display */
+.word-display {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+}
+
+.word-display h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Definition Options */
+.definition-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.definition-option {
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.definition-option:hover {
+  background-color: #E8F5E9;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Over Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: popIn 0.5s ease-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.modal-content h2 {
+  color: #FF5722;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.results {
+  margin-bottom: 2rem;
+}
+
+.result-item {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.result-label {
+  color: #666;
+}
+
+.result-value {
+  font-weight: bold;
+  color: #FF5722;
+}
+
+.restart-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .game-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .volcano-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .definition-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .word-display h2 {
+    font-size: 2rem;
+  }
+  
+  .start-screen h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Play Now Button */
+.play-now-button {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.8rem;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.play-now-button:hover {
+  background-color: #E64A19;
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.play-now-button:active {
+  transform: scale(0.98);
+}
+
+/* Correct Answer Button */
+.definition-option.correct {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #388E3C;
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+/* Incorrect Answer Button */
+.definition-option.incorrect {
+  background-color: #F44336;
+  color: white;
+  border-color: #D32F2F;
+}
+
+/* Shake animation for wrong answers */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+/* Disable hover effects when a selection has been made */
+.definition-option[disabled] {
+  cursor: not-allowed;
+}
+
+.definition-option[disabled]:not(.correct):not(.incorrect):hover {
+  transform: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 

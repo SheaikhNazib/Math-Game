@@ -9,6 +9,7 @@ const Navbar = () => {
         <>
             <div className='flex gap-14'>
 
+                {/* -------------------- math -------------------- */}
                 <div className="dropdown dropdown-start">
                     <div tabIndex={0} role="button" className="btn m-1">Math🔽</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
@@ -18,28 +19,40 @@ const Navbar = () => {
                     </ul>
                 </div>
 
+                {/* -------------------- english -------------------- */}
                 <div className="dropdown dropdown-start">
                     <div tabIndex={0} role="button" className="btn m-1">English 🔽</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/flagGames'>Guess Flag</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/wordScramble'>Word Scramble</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/vocabularyVolcano'>Vocabulary Volcano</Link></li>
                     </ul>
                 </div>
 
+                {/* -------------------- science -------------------- */}
+                <div className="dropdown dropdown-start">
+                    <div tabIndex={0} role="button" className="btn m-1">Science 🔽</div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
 
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/scienceFlashcard'>Flash Card</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/elementMatcher'>Element Matcher</Link></li>
+
+                    </ul>
+                </div>
+
+                {/* -------------------- general knowledge -------------------- */}
                 <div className="dropdown dropdown-start">
                     <div tabIndex={0} role="button" className="btn m-1">General Knowledge 🔽</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/scienceFlashcard'>Flash Card</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/flagGames'>Guess Flag</Link></li>
 
                     </ul>
                 </div>
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
 
                 {/* <Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg hover:text-black' to='/runningGame'>Running Game</Link> */}
             </div>

@@ -14,6 +14,8 @@ import SumBox from './SumBox.jsx';
 import FlagGames from './components/FlagGames.jsx';
 import WordScramble from './components/Word Scramble/WordScramble.jsx';
 import ScienceFlashcard from './components/ScienceFlashcard/ScienceFlashcard.jsx';
+import VocabularyVolcano from './components/VocabularyVolcano/VocabularyVolcano.jsx';
+import ElementMatcher from './components/ElementMatcher/ElementMatcher.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,10 +45,14 @@ const router = createBrowserRouter([
     path: "/scienceFlashcard",
     element: <ScienceFlashcard></ScienceFlashcard>
   },
-  // {
-  //   path: "/runningGame",
-  //   element: <RunningGame></RunningGame>
-  // }
+  {
+    path: "/vocabularyVolcano",
+    element: <VocabularyVolcano></VocabularyVolcano>
+  },
+  {
+    path: "/elementMatcher",
+    element: <ElementMatcher></ElementMatcher>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
