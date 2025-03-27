@@ -60,12 +60,44 @@ const ElementMatcher = () => {
         playSound('buttonClick');
     };
     
-    // Generate a new question based on difficulty
+    // Add a data validation function
+    const validatePeriodicData = () => {
+        if (!periodicTableData || periodicTableData.length === 0) {
+            console.error("Periodic table data is empty or invalid");
+            return false;
+        }
+        
+        // Log a sample for debugging
+        console.log("Sample element data:", periodicTableData[0]);
+        return true;
+    };
+
+    // Call this at component mount
+    useEffect(() => {
+        validatePeriodicData();
+    }, []);
+
+    // Modify the generate question function
     const generateQuestion = () => {
+        if (!validatePeriodicData()) {
+            return;
+        }
+        
         const randomIndex = Math.floor(Math.random() * periodicTableData.length);
         const element = periodicTableData[randomIndex];
         let questionType, correctAnswer, questionOptions;
 
+        // Make sure we're using valid element data
+        if (!element || !element.name || !element.symbol) {
+            console.error("Invalid element data:", element);
+            // Try to recover by picking another element
+            generateQuestion();
+            return;
+        }
+
+        // Ensure element name is properly formatted
+        const elementName = element.name.trim();
+        
         switch (difficulty) {
             case 'easy':
                 questionType = 'symbol';
@@ -92,13 +124,17 @@ const ElementMatcher = () => {
         }
 
         setCurrentQuestion({
-            element: element.name,
+            element: elementName,
             questionType,
             correctAnswer
         });
 
-        // Shuffle options
-        setOptions(shuffleArray([...questionOptions, correctAnswer]));
+        // Shuffle options and ensure we have exactly 4 options
+        const allOptions = [...questionOptions, correctAnswer];
+        if (allOptions.length !== 4) {
+            console.error("Incorrect number of options generated:", allOptions);
+        }
+        setOptions(shuffleArray(allOptions));
     };
 
     // Enhanced sound effects
@@ -217,15 +253,26 @@ const ElementMatcher = () => {
         }
     };
 
+    // Improved options generation function to ensure valid options
     const generateOptions = (data, property, correctAnswer) => {
         let options = [];
-        const filteredData = data.filter(item => item[property] !== correctAnswer);
+        const filteredData = data.filter(item => 
+            item[property] !== correctAnswer && 
+            item[property] !== undefined && 
+            item[property] !== null
+        );
+
+        // Safeguard against insufficient data
+        if (filteredData.length < 3) {
+            console.error("Not enough valid options in data");
+            return ["Error", "Error", "Error"];
+        }
 
         while (options.length < 3) {
             const randomIndex = Math.floor(Math.random() * filteredData.length);
             const option = filteredData[randomIndex][property];
 
-            if (!options.includes(option)) {
+            if (!options.includes(option) && option !== correctAnswer) {
                 options.push(option);
             }
         }

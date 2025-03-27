@@ -18,6 +18,10 @@ import VocabularyVolcano from './components/VocabularyVolcano/VocabularyVolcano.
 import ElementMatcher from './components/ElementMatcher/ElementMatcher.jsx';
 import GrammarNinja from './components/GrammarNinja/GrammarNinja.jsx';
 import FractionFactory from './components/FractionFactory/FractionFactory.jsx';
+import PatternPredictor from './components/PatternPredictor/PatternPredictor.jsx';
+import ChemistryLab from './components/ChemistryLab/ChemistryLab.jsx';
+import SpellingBee from './components/SpellingBee/SpellingBee.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -62,6 +66,18 @@ const router = createBrowserRouter([
   {
     path: "/fractionFactory",
     element: <FractionFactory></FractionFactory>
+  },
+  {
+    path: "/patternPredictor",
+    element: <PatternPredictor></PatternPredictor>
+  },
+  {
+    path: "/chemistryLab",
+    element: <ChemistryLab></ChemistryLab>
+  },
+  {
+    path: "/spellingBee",
+    element: <SpellingBee></SpellingBee>
   }
 ]);
 

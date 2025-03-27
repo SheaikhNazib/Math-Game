@@ -17,6 +17,7 @@ const Navbar = () => {
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/mathGame'>Math Game</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/sumBox'>Sum Box</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/fractionFactory'>Fraction Factory</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/patternPredictor'>Pattern Predictor</Link></li>
                     </ul>
                 </div>
 
@@ -27,6 +28,7 @@ const Navbar = () => {
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/wordScramble'>Word Scramble</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/vocabularyVolcano'>Vocabulary Volcano</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/grammarNinja'>Grammar Ninja</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/spellingBee'>Spelling Bee 🐝</Link></li>
                     </ul>
                 </div>
 
@@ -37,6 +39,7 @@ const Navbar = () => {
 
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/scienceFlashcard'>Flash Card</Link></li>
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/elementMatcher'>Element Matcher</Link></li>
+                        <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/chemistryLab'>Chemistry Lab</Link></li>
 
                     </ul>
                 </div>
@@ -46,7 +49,6 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn m-1">General Knowledge 🔽</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li><Link className='text-lg font-semibold hover:bg-white p-2 rounded-lg text-black hover:text-blue-600' to='/flagGames'>Guess Flag</Link></li>
-
                     </ul>
                 </div>
 

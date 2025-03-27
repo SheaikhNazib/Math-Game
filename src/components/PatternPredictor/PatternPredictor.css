@@ -1,0 +1,332 @@
+/* Main container */
+.pattern-predictor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Game title */
+.game-title {
+    color: #4a5568;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Game controls area */
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Level selector */
+.level-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.level-select {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #7c4dff;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.level-select:hover {
+    background-color: #f0f0ff;
+}
+
+/* Score board */
+.score-board {
+    display: flex;
+    gap: 1rem;
+}
+
+.score-display, .streak-display {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.score-display {
+    color: #2c5282;
+}
+
+.streak-display {
+    color: #805ad5;
+}
+
+.streak-bonus {
+    background: linear-gradient(135deg, #ffd1ff 0%, #ffb6c1 100%);
+    animation: pulse 1.5s infinite;
+}
+
+/* Timer */
+.timer {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: white;
+    color: #4a5568;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer-warning {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    animation: pulse 1s infinite;
+}
+
+/* Toggle buttons */
+.toggle-button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+    background-color: #5a52d5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pattern display area */
+.pattern-area {
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.pattern-display {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.pattern-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #edf2f7;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a5568;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-item.missing {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+}
+
+/* User input form */
+.user-input-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.answer-input {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100px;
+    transition: all 0.2s ease;
+}
+
+.answer-input:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #5a52d5;
+}
+
+/* Feedback message */
+.feedback-message {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.feedback-message.success {
+    background-color: #f0fff4;
+    color: #38a169;
+    border-left: 4px solid #38a169;
+}
+
+.feedback-message.error {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border-left: 4px solid #e53e3e;
+}
+
+.feedback-message.warning {
+    background-color: #fffaf0;
+    color: #dd6b20;
+    border-left: 4px solid #dd6b20;
+}
+
+.feedback-message.info {
+    background-color: #ebf8ff;
+    color: #3182ce;
+    border-left: 4px solid #3182ce;
+}
+
+/* Hint section */
+.hint-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.hint-button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #cbd5e0;
+    color: #4a5568;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hint-button:hover {
+    background-color: #a0aec0;
+    color: white;
+}
+
+.hint-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fefcbf;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hint-warning {
+    color: #dd6b20;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Instructions */
+.instructions {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.instructions h3 {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.instructions p {
+    margin: 0.5rem 0;
+    color: #718096;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pattern-predictor-container {
+        padding: 1rem;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pattern-item {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .pattern-item.missing {
+        font-size: 1.5rem;
+    }
+    
+    .user-input-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .answer-input {
+        width: 100%;
+    }
+} 
